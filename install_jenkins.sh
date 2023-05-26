@@ -1,3 +1,4 @@
+#!/bin/sh
 sudo apt update
 sudo apt install openjdk-11-jdk -y
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5BA31D57EF5975CA
@@ -52,3 +53,5 @@ echo 'clearing screen...' && sleep 5
 clear
 echo 'jenkins is installed'
 echo 'this is the default password :' $(sudo cat /var/lib/jenkins/secrets/initialAdminPassword)
+sudo reboot
+
